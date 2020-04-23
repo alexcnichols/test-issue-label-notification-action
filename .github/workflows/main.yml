@@ -1,0 +1,17 @@
+name: Notify users based on issue labels
+
+on:
+  issues:
+      types: [labeled]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: alexcnichols/issue-label-notification-action@master
+          with:
+             token: ${{ secrets.GITHUB_TOKEN }}
+             recipients: |
+                  help wanted=@alexcnichols
+                  documentation=@jenschelkopf
+                  
