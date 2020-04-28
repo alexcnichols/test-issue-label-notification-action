@@ -15,3 +15,4 @@ jobs:
                   help wanted=@alexcnichols
                   documentation=@jenschelkopf   
              message: 'Yo {recipients}! You should check this out since it has the {label} label.'
+             suppress-mentioned: 'true'
