@@ -14,5 +14,6 @@ jobs:
              recipients: |
                   help wanted=@alexcnichols
                   documentation=@jenschelkopf   
+                  bug=@mateoescobedo @alexcnichols
              message: 'Yo {recipients}! You should check this out since it has the {label} label.'
              suppress-mentioned: 'true'
